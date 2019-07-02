@@ -4,6 +4,7 @@ public class Main
 {
     private static void Example_1()
     {
+        
         System.out.println("\nПример 1\n");
 
         System.out.println("Целочисленные типы данных:");
