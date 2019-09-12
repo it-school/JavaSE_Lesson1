@@ -237,19 +237,25 @@ public class Main
         System.out.println("double: " + var_double);
         System.out.println("String: " + string);
 
+        System.out.println("Введите значение для переменной типа byte:");
         var_byte = scanner.nextByte();
+        System.out.println("Введите значение для переменной типа short:");
         var_short = scanner.nextShort();
+        System.out.println("Введите значение для переменной типа int:");
         var_int = scanner.nextInt();
+        System.out.println("Введите значение для переменной типа long:");
         var_long = scanner.nextLong();
-
+        System.out.println("Введите значение для переменной типа char:");
         var_char = (char) scanner.nextShort();
-
+        System.out.println("Введите значение для переменной типа float:");
         var_float = scanner.nextFloat();
+        System.out.println("Введите значение для переменной типа double:");
         var_double = scanner.nextDouble();
-
+        System.out.println("Введите значение для переменной типа String:");
         string = scanner.next();
 
-        System.out.println("\nAfter input:\nbyte: " + var_byte);
+        System.out.println("\nЗначения переменных после ввода:");
+        System.out.println("nbyte: " + var_byte);
         System.out.println("short: " + var_short);
         System.out.println("int: " + var_int);
         System.out.println("long: " + var_long);
@@ -261,18 +267,13 @@ public class Main
 
     // Главная функция - с неё начинается выполнение программы, в ней и заканчивается, если программа отработала успешно
     public static void main(String[] args) {
-
-        //System.out.println("Hello world !");
-
-        //Example_1();
-        //Example_2();
-
-//        Example_3();
-//        Example_4();
-//        Example_5();
+        Example_1();
+        Example_2();
+        Example_3();
+        Example_4();
+        Example_5();
         Example_6();
-//        Example_7();
-//        Example_8();
-//
+        Example_7();
+        Example_8();
     }
 }
