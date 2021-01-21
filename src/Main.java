@@ -1,10 +1,18 @@
 import java.util.Scanner;
 
-public class Main
-{
-    private static void Example_1()
-    {
-        
+public class Main {
+    public static void main(String[] args) {
+        Example_1();
+//        Example_2();
+//        Example_3();
+//        Example_4();
+//        Example_5();
+//        Example_6();
+//        Example_7();
+//        Example_8();
+    }
+
+    private static void Example_1() {
         System.out.println("\nПример 1\n");
 
         System.out.println("Целочисленные типы данных:");
@@ -21,8 +29,8 @@ public class Main
 // Для boolean. Размер вне массива - 1 бит, размер в составе массива 32 бита, т.к. используется int
         System.out.println("Логический тип данных boolean(1 или 32 бита) : false-true");
     }
-
     // Инициализация переменных
+
     private static void Example_2() {
         System.out.println("\nПример 2\n");
 
@@ -56,7 +64,7 @@ public class Main
 
         // Пример неявного(безопасного каста)
         byte x = 127;
-        x = (byte)(x + x);
+        x = (byte) (x + x);
         int y = x;
 
         // Пример явного (опасного каста)
@@ -71,15 +79,15 @@ public class Main
         System.out.println(X);
         System.out.println(Y);
     }
-
     // Работа с константой
+
     private static void Example_3() {
         // В Java принято для констант писать идентификаторы большими буквами
         final int LOG_TAG = 20;
         //LOG_TAG = 12; - ошибка компиляции
     }
-
     // Арифметические операции
+
     private static void Example_4() {
         System.out.println("\nПример 4\n");
 
@@ -111,8 +119,8 @@ public class Main
         System.out.println("Результат выполнения операции 20/0.=" + 20 / 0.); // infinity
         System.out.println("Результат выполнения операции -20/0.=" + -20 / 0.); // -infinity
     }
-
     // Сокращенная запись арифметических операций
+
     private static void Example_5() {
         System.out.println("\nПример 5\n");
 
@@ -135,8 +143,8 @@ public class Main
         a %= 3;
         System.out.println("a%3  = " + a);
     }
-
     // Инкремент, декремент
+
     private static void Example_6() {
         // Достаточно часто, при написании программ, необходимо увеличивать или уменьшать значение переменной на 1
         // Т.е. мы можем записать это действие, как :
@@ -159,8 +167,8 @@ public class Main
 
         // Для декремента всё аналогично
     }
-
     // Класc для работы с математикой Math
+
     private static void Example_7() {
         // Для различных задач, связанных с математикой в Java предусмотрен класс Math
         // Далее рассмотрим класс Math, содержащий различные математически функции. Рассмотрим некоторые из них:
@@ -209,8 +217,8 @@ public class Main
         System.out.println((int) (Math.random() * 5 + 3)); // целое число из [3;7]
         System.out.println((int) (Math.random() * 11) - 5); // целое число из [-5;5]
     }
-
     // Ввод данных в консоль
+
     private static void Example_8() {
         // Создаём экземпляр класса Scanner для считывания данных, введенных пользователем
         System.out.println("\nПример 8\n");
@@ -265,16 +273,5 @@ public class Main
         System.out.println("double: " + var_double);
         System.out.println("String: " + string);
     }
-
     // Главная функция - с неё начинается выполнение программы, в ней и заканчивается, если программа отработала успешно
-    public static void main(String[] args) {
-        Example_1();
-        Example_2();
-        Example_3();
-        Example_4();
-        Example_5();
-        Example_6();
-        Example_7();
-        Example_8();
-    }
 }
