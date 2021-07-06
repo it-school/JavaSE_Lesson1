@@ -210,8 +210,9 @@ public class Main {
         System.out.println(Math.round(9.5 - 0.000001)); // выведет 9
         System.out.println(Math.ceil(9.4)); // выведет 10.0
         // Находим гипотенузу треугольника с катетами 3 и 4
-        double c = Math.sqrt(3 * 3 + 4 * 4);
-        System.out.println(c); // выведет гипотенузу треугольника с катетами 3 и 4
+        double a = 3, b = 4;
+        double c = Math.sqrt(a * a + b * b); // Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+        System.out.println(c); // выведет на экран результат вычисления из пересенной с
         double s1 = Math.cos(Math.toRadians(60));
         System.out.println(s1); // выведет косинус угла в 60 градусов
 
