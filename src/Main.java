@@ -10,7 +10,7 @@ public class Main {
      * @param args input arguments array
      */
     public static void main(String[] args) {
-		Example_1();
+//		Example_1();
 //      Example_2();
 //      Example_3();
 //      Example_4();
@@ -18,6 +18,11 @@ public class Main {
 //      Example_6();
 //      Example_7();
 //      Example_8();
+
+        System.out.println("  @..@");
+        System.out.println(" (----)");
+        System.out.println("( >__< )");
+        System.out.println("^^ ~~ ^^");
     }
 
     private static void Example_4() {
@@ -133,8 +138,8 @@ public class Main {
         System.out.println("\nПример 5\n");
 
         double a = 100;
-        a++; // a = a +1; a +=1;
-        a--;
+        a++; // a = a + 1; a += 1;
+        a--; // a = a - 1; a -= 1;
 
         System.out.println("Переменная изначально : a = " + a);
 
@@ -202,13 +207,14 @@ public class Main {
 
         // Примеры использования:
 
-        System.out.println("\nПример 7\n");
+        System.out.println("\n\tПример 7\n");
 
         System.out.println(Math.abs(-2.33)); // выведет 2.33
         System.out.println(Math.round(Math.PI)); // выведет 3
         System.out.println(Math.round(9.5)); // выведет 10
         System.out.println(Math.round(9.5 - 0.000001)); // выведет 9
-        System.out.println(Math.ceil(9.4)); // выведет 10.0
+        System.out.println(Math.ceil(9.1)); // выведет 10.0
+        System.out.println(Math.floor(9.9)); // выведет 9.0
         // Находим гипотенузу треугольника с катетами 3 и 4
         double a = 3, b = 4;
         double c = Math.sqrt(a * a + b * b); // Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
@@ -242,8 +248,8 @@ public class Main {
 
         char var_char = '\0'; // \0 - символ окончания строки
 
-        float var_float = 0f;
-        double var_double = 0D;
+        float var_float = 0.0f;
+        double var_double = 0.0D;
 
         String string = "";
 
