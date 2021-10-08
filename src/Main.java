@@ -10,7 +10,7 @@ public class Main {
      * @param args input arguments array
      */
     public static void main(String[] args) {
-//		Example_1();
+		  Example_1();
 //      Example_2();
 //      Example_3();
 //      Example_4();
@@ -23,6 +23,10 @@ public class Main {
         System.out.println(" (----)");
         System.out.println("( >__< )");
         System.out.println("^^ ~~ ^^");
+
+        double a, x = 5;
+        a = 3 * Math.pow(x, 1 / 3) - 7;
+        System.out.println("\na = " + a);
     }
 
     private static void Example_4() {
@@ -249,7 +253,7 @@ public class Main {
         char var_char = '\0'; // \0 - символ окончания строки
 
         float var_float = 0.0f;
-        double var_double = 0.0D;
+        double var_double = 0.0;
 
         String string = "";
 
