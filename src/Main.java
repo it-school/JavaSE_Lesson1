@@ -10,7 +10,7 @@ public class Main {
      * @param args input arguments array
      */
     public static void main(String[] args) {
-		  Example_1();
+        Example_1();
 //      Example_2();
 //      Example_3();
 //      Example_4();

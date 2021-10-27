@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jpackage" name="Lesson1_Examples">
+    <output-path>$PROJECT_DIR$/out/artifacts/Lesson1_Examples</output-path>
+    <root id="root">
+      <element id="archive" name="Lesson1_Examples.jar">
+        <element id="module-output" name="JavaSE_Lesson1" />
+      </element>
+    </root>
+  </artifact>
+</component>
