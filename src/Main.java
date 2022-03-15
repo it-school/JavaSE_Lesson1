@@ -4,25 +4,124 @@ import java.util.Scanner;
  * Main - основной класс программы - который содержит функцию public static void main()
  */
 public class Main {
+   public static final String ANSI_RESET = "\u001B[0m";
+   public static final String ANSI_BLACK_BACKGROUND = "\u001B[40m";
+   public static final String ANSI_RED_BACKGROUND = "\u001B[41m";
+   public static final String ANSI_GREEN_BACKGROUND = "\u001B[42m";
+   public static final String ANSI_YELLOW_BACKGROUND = "\u001B[43m";
+   public static final String ANSI_BLUE_BACKGROUND = "\u001B[44m";
+   public static final String ANSI_PURPLE_BACKGROUND = "\u001B[45m";
+   public static final String ANSI_CYAN_BACKGROUND = "\u001B[46m";
+   public static final String ANSI_WHITE_BACKGROUND = "\u001B[47m";
+   public static final String RESET = "\033[0m";  // Text Reset
+
+   public static final String ANSI_BLACK = "\u001B[30m";
+   public static final String ANSI_RED = "\u001B[31m";
+   public static final String ANSI_GREEN = "\u001B[32m";
+   public static final String ANSI_YELLOW = "\u001B[33m";
+   public static final String ANSI_BLUE = "\u001B[34m";
+   public static final String ANSI_PURPLE = "\u001B[35m";
+   public static final String ANSI_CYAN = "\u001B[36m";
+   public static final String ANSI_WHITE = "\u001B[37m";
+
+   // Regular Colors
+   public static final String BLACK = "\033[0;30m";   // BLACK
+   public static final String RED = "\033[0;31m";     // RED
+   public static final String GREEN = "\033[0;32m";   // GREEN
+   public static final String YELLOW = "\033[0;33m";  // YELLOW
+   public static final String BLUE = "\033[0;34m";    // BLUE
+   public static final String PURPLE = "\033[0;35m";  // PURPLE
+   public static final String CYAN = "\033[0;36m";    // CYAN
+   public static final String WHITE = "\033[0;37m";   // WHITE
+
+   // Bold
+   public static final String BLACK_BOLD = "\033[1;30m";  // BLACK
+   public static final String RED_BOLD = "\033[1;31m";    // RED
+   public static final String GREEN_BOLD = "\033[1;32m";  // GREEN
+   public static final String YELLOW_BOLD = "\033[1;33m"; // YELLOW
+   public static final String BLUE_BOLD = "\033[1;34m";   // BLUE
+   public static final String PURPLE_BOLD = "\033[1;35m"; // PURPLE
+   public static final String CYAN_BOLD = "\033[1;36m";   // CYAN
+   public static final String WHITE_BOLD = "\033[1;37m";  // WHITE
+
+   // Underline
+   public static final String BLACK_UNDERLINED = "\033[4;30m";  // BLACK
+   public static final String RED_UNDERLINED = "\033[4;31m";    // RED
+   public static final String GREEN_UNDERLINED = "\033[4;32m";  // GREEN
+   public static final String YELLOW_UNDERLINED = "\033[4;33m"; // YELLOW
+   public static final String BLUE_UNDERLINED = "\033[4;34m";   // BLUE
+   public static final String PURPLE_UNDERLINED = "\033[4;35m"; // PURPLE
+   public static final String CYAN_UNDERLINED = "\033[4;36m";   // CYAN
+   public static final String WHITE_UNDERLINED = "\033[4;37m";  // WHITE
+
+   // Background
+   public static final String BLACK_BACKGROUND = "\033[40m";  // BLACK
+   public static final String RED_BACKGROUND = "\033[41m";    // RED
+   public static final String GREEN_BACKGROUND = "\033[42m";  // GREEN
+   public static final String YELLOW_BACKGROUND = "\033[43m"; // YELLOW
+   public static final String BLUE_BACKGROUND = "\033[44m";   // BLUE
+   public static final String PURPLE_BACKGROUND = "\033[45m"; // PURPLE
+   public static final String CYAN_BACKGROUND = "\033[46m";   // CYAN
+   public static final String WHITE_BACKGROUND = "\033[47m";  // WHITE
+
+   // High Intensity
+   public static final String BLACK_BRIGHT = "\033[0;90m";  // BLACK
+   public static final String RED_BRIGHT = "\033[0;91m";    // RED
+   public static final String GREEN_BRIGHT = "\033[0;92m";  // GREEN
+   public static final String YELLOW_BRIGHT = "\033[0;93m"; // YELLOW
+   public static final String BLUE_BRIGHT = "\033[0;94m";   // BLUE
+   public static final String PURPLE_BRIGHT = "\033[0;95m"; // PURPLE
+   public static final String CYAN_BRIGHT = "\033[0;96m";   // CYAN
+   public static final String WHITE_BRIGHT = "\033[0;97m";  // WHITE
+
+   // Bold High Intensity
+   public static final String BLACK_BOLD_BRIGHT = "\033[1;90m"; // BLACK
+   public static final String RED_BOLD_BRIGHT = "\033[1;91m";   // RED
+   public static final String GREEN_BOLD_BRIGHT = "\033[1;92m"; // GREEN
+   public static final String YELLOW_BOLD_BRIGHT = "\033[1;93m";// YELLOW
+   public static final String BLUE_BOLD_BRIGHT = "\033[1;94m";  // BLUE
+   public static final String PURPLE_BOLD_BRIGHT = "\033[1;95m";// PURPLE
+   public static final String CYAN_BOLD_BRIGHT = "\033[1;96m";  // CYAN
+   public static final String WHITE_BOLD_BRIGHT = "\033[1;97m"; // WHITE
+
+   // High Intensity backgrounds
+   public static final String BLACK_BACKGROUND_BRIGHT = "\033[0;100m";// BLACK
+   public static final String RED_BACKGROUND_BRIGHT = "\033[0;101m";// RED
+   public static final String GREEN_BACKGROUND_BRIGHT = "\033[0;102m";// GREEN
+   public static final String YELLOW_BACKGROUND_BRIGHT = "\033[0;103m";// YELLOW
+   public static final String BLUE_BACKGROUND_BRIGHT = "\033[0;104m";// BLUE
+   public static final String PURPLE_BACKGROUND_BRIGHT = "\033[0;105m"; // PURPLE
+   public static final String CYAN_BACKGROUND_BRIGHT = "\033[0;106m";  // CYAN
+   public static final String WHITE_BACKGROUND_BRIGHT = "\033[0;107m";   // WHITE
+
    /**
     * Главная функция - с неё начинается выполнение программы, в ней и заканчивается, если программа отработала успешно
     *
     * @param args список входных параметров (может быть не задействован)
     */
    public static void main(String[] args) {
-      Example_1();
+      System.out.println("hello".hashCode());
+      System.out.println("hellO".hashCode());
+/*      Example_1();
       Example_2();
       Example_3();
       Example_4();
       Example_5();
       Example_6();
       Example_7();
-      Example_8();
+      Example_8();*/
+
+      System.out.print("123456");      // C++ cout<<"123456";
+      System.out.println("\t123456");  // C++ cout<<"\t123456"<<endl;
 
       System.out.println("  @..@");
       System.out.println(" (----)");
       System.out.println("( >__< )");
       System.out.println("^^ ~~ ^^");
+
+      System.out.println(ANSI_GREEN_BACKGROUND + "This text has a green background but default text!" + ANSI_RESET);
+      System.out.println(RED_BOLD + "This text has bold red text but a default background!" + ANSI_RESET);
+      System.out.println(ANSI_GREEN_BACKGROUND + ANSI_CYAN + "This text has a green background and cyan text!" + ANSI_RESET);
    }
 
    /**
@@ -57,10 +156,10 @@ public class Main {
       int a = 0, b = 0, c = 0;
 
       // -------Целочисленные типы данных
-      byte var_byte = 2;
-      short var_short = 3000;
-      int var_int = 50000;
-      long var_long = 1000000L;
+      byte var_byte = 02;        // восьмеричное целочисленное значение
+      short var_short = 0x3000;  // шестнадцатеричное целочисленное значение
+      int var_int = 50000;       // десятичное целочисленное значение
+      long var_long = 1000000L;  // десятичное целочисленное значение типа long
 
       // ------Вещественные типы данных
       // Вещественное число с одинарной точностью
@@ -230,11 +329,12 @@ public class Main {
       System.out.println(Math.abs(-2.33)); // выведет 2.33
       System.out.println(Math.round(Math.PI)); // выведет 3
       System.out.println(Math.round(9.5)); // выведет 10
-      System.out.println(Math.round(9.5 - 0.000001)); // выведет 9
+      System.out.println(Math.round(9.5 - 0.000000001)); // выведет 9
       System.out.println(Math.ceil(9.1)); // выведет 10.0
       System.out.println(Math.floor(9.9)); // выведет 9.0
       // Находим гипотенузу треугольника с катетами 3 и 4
       double a = 3, b = 4;
+
       double c = Math.sqrt(a * a + b * b); // Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
       System.out.println(c); // выведет на экран результат вычисления из переменной с
       double s1 = Math.cos(Math.toRadians(60));
@@ -299,7 +399,7 @@ public class Main {
       System.out.println("Введите значение для переменной типа long:");
       var_long = scanner.nextLong();
       System.out.println("Введите значение для переменной типа char:");
-      var_char = (char) scanner.nextShort();
+      var_char = scanner.next().charAt(0);
       System.out.println("Введите значение для переменной типа float:");
       var_float = scanner.nextFloat();
       System.out.println("Введите значение для переменной типа double:");
