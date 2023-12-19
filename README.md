@@ -1,1 +1,1 @@
-Java datatypes basics
+Java datatypes basics. Math operations.
